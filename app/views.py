@@ -26,4 +26,4 @@ def time_view(request):
 
 def workdir_view(request):
     directory = os.listdir(path='.')
-    return directory
+    return HttpResponse(directory)
